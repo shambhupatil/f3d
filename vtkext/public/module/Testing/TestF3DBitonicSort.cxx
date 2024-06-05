@@ -59,13 +59,13 @@ int TestF3DBitonicSort(int argc, char* argv[])
   }
 
   // check invalid types
-  if (sorter->Initialize(128, VTK_CHAR, VTK_FLOAT))
+  if (sorter->Initialize(256, VTK_CHAR, VTK_FLOAT))
   {
     std::cerr << "The invalid key type is not failing" << std::endl;
     return EXIT_FAILURE;
   }
 
-  if (sorter->Initialize(128, VTK_FLOAT, VTK_CHAR))
+  if (sorter->Initialize(256, VTK_FLOAT, VTK_CHAR))
   {
     std::cerr << "The invalid key type is not failing" << std::endl;
     return EXIT_FAILURE;
