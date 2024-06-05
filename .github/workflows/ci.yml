@@ -104,8 +104,10 @@ jobs:
     - name: Install clang
       shell: bash
       run: |
+        wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add -
+        apt-get update
         apt remove -y clang-14
-        apt install -y clang-16 
+        apt-get install -y clang-16 
 
     - name: Checkout
       uses: actions/checkout@v4
