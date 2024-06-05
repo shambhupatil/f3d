@@ -96,16 +96,16 @@ jobs:
 
     env:
       DISPLAY: :0
-      CC: clang-14
-      CXX: clang++-14
+      CC: clang
+      CXX: clang++
       VTK_SMP_BACKEND_IN_USE: Sequential
 
     steps:
-    - name: Install clang-14
+    - name: Install clang
       shell: bash
       run: |
         apt remove -y clang-14
-        apt install -y clang-14 
+        apt install -y clang 
 
     - name: Checkout
       uses: actions/checkout@v4
