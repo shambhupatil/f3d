@@ -78,7 +78,7 @@ int TestF3DBitonicSort(int argc, char* argv[])
     return EXIT_FAILURE;
   }
 
-  if (!sorter->Initialize(128, VTK_DOUBLE, VTK_INT))
+  if (!sorter->Initialize(256, VTK_DOUBLE, VTK_INT))
   {
     std::cerr << "Valid Initialize call failed" << std::endl;
     return EXIT_FAILURE;
