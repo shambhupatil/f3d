@@ -104,8 +104,8 @@ jobs:
     - name: Install clang-14
       shell: bash
       run: |
-        sudo apt remove -y clang-14
-        sudo apt install -y clang-14 
+        apt remove -y clang-14
+        apt install -y clang-14 
 
     - name: Checkout
       uses: actions/checkout@v4
